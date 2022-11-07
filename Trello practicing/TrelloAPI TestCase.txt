@@ -1,0 +1,143 @@
+Trello API Test cases
+
+Created by :Menna Hossam
+-----------------------------------------------------------------
+
+****Create a board
+
+API :POST https://api.trello.com/1/boards/?name=Menna Schadule&key={{Key}}&token={{Token}}
+
+
+ TestCase1:Status code should equal 200 and OK
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ TestCase2:Board is not closed
+ Expected Result :closed equal false
+ Actual Result :closed equal false
+ Status: Pass
+ 
+ TestCase1:permissionLevel private
+ Expected Result :permissionLevel equal private
+ Actual Result : permissionLevel equal private
+ Status: Pass
+ 
+ TestCase1:canBePublic is true
+ Expected Result :canBePublic is true
+ Actual Result : canBePublic is true
+ Status: Pass
+ 
+ TestCase1:canInvite is true
+ Expected Result :canInvite is true
+ Actual Result :canInvite is true
+ Status: Pass
+ 
+ 
+
+-------------------------------------------------------------------
+*****Get Board
+
+API:GET https://api.trello.com/1/members/me?boards=open&key={{Key}}&token={{Token}}
+
+
+ TestCase1:Status code should equal 200 and OK
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ 
+ TestCase1:Status Number of boards should be more than 1
+ Expected Result :board equal 5
+ Actual Result : boards equal 5
+ Status: Pass
+ 
+ 
+ --------------------------------------------------------------------
+ ******Delete A Board
+ 
+ API:Delete https://api.trello.com/1/boards/:id?key={{Key}}&token={{Token}}
+ 
+ TestCase1:Status code should equal 200 and OK
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ TestCase1: Board Deleted Successfully
+ Expected Result :{_value :"board is removed successfully"}
+ Actual Result : {_value :"board is removed successfully"}
+ Status: Pass
+ 
+ ---------------------------------------------------------------------
+ ******Create A List
+ 
+ API: POST https://api.trello.com/1/lists?name=Layla&idBoard=6362e0bc433366019aaf0ea6&key={{Key}}&token={{Token}}
+ 
+ TestCase1:Status code should equal 200 and OK
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ TestCase1:ID key
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ TestCase1:name Key
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ TestCase1:idBoard Key
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ TestCase1:closed parameter
+ Expected Result :closed parameter equal false
+ Actual Result : closed parameter equal false
+ Status: Pass
+ 
+ TestCase1:limits are empty object
+ Expected Result :limits are empty object {}.
+ Actual Result : limits are empty object {}.
+ Status: Pass
+ 
+ 
+ 
+ -----------------------------------------------------------------------
+ *****Get List On Board
+ 
+ API:GET https://api.trello.com/1/boards/{{FirstBoardID}}/lists?key={{Key}}&token={{Token}}
+ 
+ TestCase1:Status code should equal 200 and OK
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+  TestCase1:Number of list is five lists
+ Expected Result :Number of list equal 5
+ Actual Result : Number of list equal 5
+ Status: Pass
+ 
+-----------------------------------------------------------------------
+******Archieve or un- Archieve alist
+
+ API:PUT https://api.trello.com/1/lists/{{LastListID}}/closed?key={{Key}}&token={{Token}}&value=true
+
+TestCase1:Status code should equal 200 and OK
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ TestCase1:closed should be true if value is true
+ Expected Result :closed equal true
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ TestCase1:Set-Cookie
+ Expected Result:cookie include "isEnterpriseAdmin%3Dfalse"
+ Actual Result : cookie include "isEnterpriseAdmin%3Dfalse"
+ Status: Pass
+ 
+ ----------------------------------------------------------------------

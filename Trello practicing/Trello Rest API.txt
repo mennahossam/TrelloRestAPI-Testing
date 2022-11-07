@@ -1,0 +1,171 @@
+ Get your credential values and try the first Trello API.
+ --------------------------------------------------------
+  API : HTTP method -> GET | https://api.trello.com/1/members/me?boards=open&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df
+                    
+					->  {{BaseURI}}/members/me?boards=open&key={{Key}}&token={{Token}}
+	
+	
+	
+  Response Body :
+
+        "boards": {
+            "totalPerMember": {
+                "status": "ok",
+                "disableAt": 4500,
+                "warnAt": 3600
+            }
+        },
+        "orgs": {
+            "totalPerMember": {
+                "status": "ok",
+                "disableAt": 850,
+                "warnAt": 680
+            }
+        }
+    },
+    "loginTypes": [
+        "atlassian"
+    ],
+    "marketingOptIn": {
+        "optedIn": true,
+        "date": "2022-03-29T15:49:25.723Z"
+    },
+    "messagesDismissed": [],
+    "oneTimeMessagesDismissed": [
+        "sent-possible-new-signup-event",
+        "62432a2700d3037fbcb52534-memberHomeScreenPromptFull",
+        "close-menu-of-first-board",
+        "team-template-picker-62432a2700d3037fbcb52534"
+    ],
+    "prefs": {
+        "privacy": {
+            "fullName": "public",
+            "avatar": "public"
+        },
+        "sendSummaries": true,
+        "minutesBetweenSummaries": 60,
+        "minutesBeforeDeadlineToNotify": 1440,
+        "colorBlind": false,
+        "locale": "en-US"
+    },
+    "trophies": [],
+    "uploadedAvatarHash": null,
+    "uploadedAvatarUrl": null,
+    "premiumFeatures": [
+        "additionalBoardBackgrounds",
+        "additionalStickers",
+        "customBoardBackgrounds",
+        "customEmoji",
+        "customStickers",
+        "plugins"
+    ],
+    "isAaMastered": true,
+    "ixUpdate": "869",
+    "boards": [
+        {
+            "id": "632d416611bb9c0146790c3d",
+            "name": "frist Test",
+            "closed": false,
+            "idOrganization": "62432a2700d3037fbcb52534",
+            "pinned": false
+        },
+        {
+            "id": "6330100e573194016558b58a",
+            "name": "frist Test",
+            "closed": false,
+            "idOrganization": "62432a2700d3037fbcb52534",
+            "pinned": false
+        },
+        {
+            "id": "632cec2c7ff13801f30290b6",
+            "name": "new_board_test",
+            "closed": false,
+            "idOrganization": "62432a2700d3037fbcb52534",
+            "pinned": false
+        },
+        {
+            "id": "632add57ecd81901b345c96f",
+            "name": "new_board_testa khaled sdasdasdaasdxczxcwqeqweqczxc",
+            "closed": false,
+            "idOrganization": "62432a2700d3037fbcb52534",
+            "pinned": false
+        },
+        {
+            "id": "6334105a5cd2ab0186c639af",
+            "name": "nihad",
+            "closed": false,
+            "idOrganization": "62432a2700d3037fbcb52534",
+            "pinned": false
+        },
+        {
+            "id": "6334119dde045500f273f2d9",
+            "name": "nihad",
+            "closed": false,
+            "idOrganization": "62432a2700d3037fbcb52534",
+            "pinned": false
+        },
+        {
+            "id": "633411b71fa44c01189ec52f",
+            "name": "nihad",
+            "closed": false,
+            "idOrganization": "62432a2700d3037fbcb52534",
+            "pinned": false
+        },
+        {
+            "id": "6332e69962e8a503913255d4",
+            "name": "{name}",
+            "closed": false,
+            "idOrganization": "62432a2700d3037fbcb52534",
+            "pinned": false
+        }
+    ]
+----------------------------------------------------------------------------------------------------
+ API : HTTP method -> GET | https://api.trello.com/1/members/me?boards=open&key=952a428231fa57dcc98a2b86ee84848e&token=0efac6a89468c21896438b478f15665e077445f944224a57f412b6e19a829d5f
+                   ->  {{BaseURI}}/members/me?boards=open&key={{Key}}&token={{Token}}
+				
+  Response Body for my personal Key and token :				
+				 
+				 
+    "boards": [
+        {
+            "id": "6362e0bc433366019aaf0ea6",
+            "name": "ISTQB ",
+            "closed": false,
+            "idOrganization": "6362dd3db5addb0418ad9410",
+            "pinned": false
+        },
+        {
+            "id": "6362fdb7fe91640071abdf7f",
+            "name": "Menna",
+            "closed": false,
+            "idOrganization": "6362dd3db5addb0418ad9410",
+            "pinned": false
+        },
+        {
+            "id": "6362f20a11ceab02f65ecc0d",
+            "name": "Menna Schadule",
+            "closed": false,
+            "idOrganization": "6362dd3db5addb0418ad9410",
+            "pinned": false
+        },
+        {
+            "id": "6362fa9180b19400c24493e1",
+            "name": "Menna Schadule",
+            "closed": false,
+            "idOrganization": "6362dd3db5addb0418ad9410",
+            "pinned": false
+        },
+        {
+            "id": "6362fdc2246ada069acd5e58",
+            "name": "Omar",
+            "closed": false,
+            "idOrganization": "6362dd3db5addb0418ad9410",
+            "pinned": false
+        }
+    ]
+}
+
+
+
+
+

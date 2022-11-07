@@ -1,0 +1,109 @@
+//created by "Menna Hossam"
+-----------------------------------------------------------------------------------
+ the Swagger website test cases (Authors section)
+------------------------------------------------------------------------------------
+ ****GET ALL Authors
+ 
+ API:GET /api/v1/Authors
+ 
+ TestCase1:Status code should equal 200 and OK
+ Expected Result :200 OK
+ Actual Result : 200 OK
+ Status: Pass
+ 
+ TestCase2:Response size "response size should be within 30000 KB and 50000 KB"
+ Expected Result :withn 30000 KB and 50000 KB
+ Actual Result : 44079 KB
+ Status: Pass
+ 
+ TestCase3:check header value json Type
+ Expected Result :"application/json; charset=utf-8"
+ Actual Result : application/json; charset=utf-8; v=1.0
+ Status: Pass
+ 
+ TestCase4:Response Body contain id ,idBook,first name, last name
+ Expected Result :{"id","idBook","firstName","lastName"}
+ Actual Result : {"id","idBook","firstName","lastName"}
+ Status: Pass
+ 
+ 
+ ------------------------------------------------------------------------------------
+ ****create new Author
+ 
+ API: POST /api/v1/Authors
+
+ TestCase1: Status code is 200,OK
+ Expected Result : 200 Ok
+ Actual Result :  200 OK
+ Status: Pass
+ 
+ TestCase2: firstname & lastname should be mandatory.
+ Expected Result response code should be 400 if firstName or lastName are missed in the request body.
+ Actual Result : response code is 400.
+ Status: Pass
+ 
+ TestCase2: response Body contains firstname & lastname 
+ Expected Result :{"firstName","lastName"}
+ Actual Result : {"firstName","lastName"}
+ Status: Pass
+ 
+ 
+ -----------------------------------------------------------------------------------------
+ ****Get unvalid Author
+ 
+ API:GET //api/v1/Authors
+ 
+ TestCase:unvalid Author response 404 Not Found
+ Expected Result : response 404 Not Found
+ Actual Result :  response 404 Not Found
+ Status: Pass
+ 
+ ------------------------------------------------------------------------------------------
+ *****Delete Author
+ 
+ API:DEL /api/v1/Authors/{id}
+
+ TestCase:Delete Author successfuly
+ Expected Result : 200 Ok
+ Actual Result :  200 OK
+ Status: Pass
+ 
+ --------------------------------------------------------------------------------------------
+ ******Update Author(FirstName ,LastName)
+ 
+ API:PUT /api/v1/Authors/{id}
+ 
+ TestCase1: Status code is 200,OK
+ Expected Result : 200 Ok
+ Actual Result :  200 OK
+ Status: Pass
+ 
+ TestCase2:Author updated successfully
+ Expected Result : 200 Ok
+ Actual Result :  200 OK
+ Status: Pass
+ ----------------------------------------------------------------------------------------------
+ ****Get Author ID
+ 
+ API:GET /api/v1/Authors/{id}
+ 
+ TestCase1: Status code is 200,OK
+ Expected Result : 200 Ok
+ Actual Result :  200 OK
+ Status: Pass
+ 
+ 
+ TestCase2:The author's data is changed in GET request
+  Expected Result: 200 ok
+ Actual Result: 200 ok
+ Status: Pass 
+ ----------------------------------------------------------------------------------------------
+ *****GET Author idBook
+ 
+ API: GET /api/v1/Authors/{idBook}
+ 
+ Test Case 1: Searching with valid idBook
+ Expected Result: 200 ok
+ Actual Result: 200 ok
+ Status: Pass 
+ 
